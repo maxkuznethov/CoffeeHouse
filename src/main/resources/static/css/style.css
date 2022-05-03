@@ -1,0 +1,24 @@
+:root {
+  --bg_collor1: #ffffff;
+  --bg_collor2: #fdf5e6;
+  --bg_collor3: #593e2c;
+}
+
+body {
+  min-height: 75rem;
+}
+
+.bg1 {
+  background-color: var(--bg_collor1);
+}
+.bg2 {
+  background-color: var(--bg_collor2);
+}
+
+.bg3 {
+  background-color: var(--bg_collor3);
+}
+header,
+section {
+  padding: 75px 0px;
+}
