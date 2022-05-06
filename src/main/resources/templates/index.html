@@ -9,10 +9,12 @@
     <link href="../static/css/style.css" rel="stylesheet" />
   </head>
   <body>
+    <!--Navbar-->
+
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">CofeeHouse</a>
+          <a class="navbar-brand color1 fs-3" href="#">CoffeeHouse</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -27,15 +29,19 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active fs-5" href="#about">О нас</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link active fs-5" href="#coffee">Кофе</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-                  >Disabled</a
-                >
+                <a class="nav-link active fs-5" href="#desserts">Десерты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" href="#contacts">Контакты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" href="#footer">Бронирование</a>
               </li>
             </ul>
 
@@ -45,7 +51,9 @@
       </nav>
     </header>
 
-    <section>
+    <!--About section-->
+
+    <section id="about">
       <div class="container">
         <div class="row">
           <h1 class="text-center text-uppercase mb-5">О нас</h1>
@@ -62,11 +70,212 @@
       </div>
     </section>
 
-    <section class="bg2">
+    <!--Coffee section-->
+
+    <section class="bg2" id="coffee">
       <div class="container">
         <div class="row"><h1 class="text-center text-uppercase mb-5">Наш кофе</h1></div>
+        <div class="row justify-content-center justify-content-center">
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-5">
+            <div class="card mx-auto" style="width: 18rem">
+              <img src="../static/images/coffee1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Американо</h5>
+                <p class="card-text">Эспрессо, разбавленный горячей водой <br /><br /></p>
+                <h6>300мл / 150₽</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-5">
+            <div class="card mx-auto" style="width: 18rem">
+              <img src="../static/images/coffee2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Латте</h5>
+                <p class="card-text">
+                  Одна часть эспрессо и две части молока со взбитой пеной <br />
+                  <br />
+                </p>
+                <h6>300мл / 170₽</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-5">
+            <div class="card mx-auto" style="width: 18rem">
+              <img src="../static/images/coffee3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Капучино</h5>
+                <p class="card-text">
+                  Кофе с молоком, которое взбито в пышную пену, с нежной структурой
+                </p>
+                <h6>300мл / 180₽</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-5">
+            <div class="card mx-auto" style="width: 18rem">
+              <img src="../static/images/coffee4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Флэт уайт</h5>
+                <p class="card-text">
+                  Двойной эспрессо с подогретым через капучинатор молоком и мелкой пеной на
+                  поверхности
+                </p>
+                <h6>200мл / 180₽</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-5">
+            <div class="card mx-auto" style="width: 18rem">
+              <img src="../static/images/coffee5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Эспрессо</h5>
+                <p class="card-text">
+                  Крепкий, ароматный напиток, приготовленный при помощи специальной
+                  эсперссо-кофеварки
+                </p>
+                <h6>30мл / 80₽</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <div class="card mx-auto" style="width: 18rem">
+              <img src="../static/images/coffee6.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Фраппе</h5>
+                <p class="card-text">
+                  Освежающий напиток на основе черного кофе с пенкой и льдом <br />
+                  <br />
+                </p>
+                <h6>450мл / 320₽</h6>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!--Deserts section-->
+
+    <section class="bg1" id="desserts">
+      <div class="container">
+        <div class="row"><h1 class="text-center text-uppercase mb-5">Наши десерты</h1></div>
+        <div class="row justify-content-center justify-content-center">
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-5">
+            <div class="card mx-auto" style="width: 18rem">
+              <img src="../static/images/dessert1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Чизкейк нью-йорк</h5>
+                <p class="card-text">
+                  Классический творожный десерт на основе из песочного теста <br />
+                  <br />
+                </p>
+                <h6>150г / 250₽</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-5">
+            <div class="card mx-auto" style="width: 18rem">
+              <img src="../static/images/dessert2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Морковный торт</h5>
+                <p class="card-text">
+                  Бисквитный торт с пряностями и взбитым кремом на кокосовых сливках
+                </p>
+                <h6>125г / 260₽</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-5">
+            <div class="card mx-auto" style="width: 18rem">
+              <img src="../static/images/dessert3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Манговый мусс</h5>
+                <p class="card-text">
+                  Тропический муссовый десерт из манго и кокоса <br />
+                  <br />
+                </p>
+                <h6>100г / 200₽</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-5">
+            <div class="card mx-auto" style="width: 18rem">
+              <img src="../static/images/dessert4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Лимонная меренга</h5>
+                <p class="card-text">
+                  Воздушный десерт из взбитого белкового крема и лимонной основы
+                </p>
+                <h6>130г / 210₽</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-5">
+            <div class="card mx-auto" style="width: 18rem">
+              <img src="../static/images/dessert5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Медовик</h5>
+                <p class="card-text">
+                  Бисквитно-мёдовый торт, пропитанный сметанным кремом <br /><br />
+                </p>
+                <h6>150г / 180₽</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6 col-sm-12">
+            <div class="card mx-auto" style="width: 18rem">
+              <img src="../static/images/dessert6.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title text-uppercase">Эклер фисташковый</h5>
+                <p class="card-text">Заварной десерт с ароматным фисташковым кремом <br /><br /></p>
+                <h6>80г / 120₽</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg2" id="contacts">
+      <div class="container">
+        <div class="row"><h1 class="text-center text-uppercase mb-5">Наши контакты</h1></div>
+        <div class="row">
+          <div class="col-xl-8 col-sm-12 mb-5">
+            <iframe
+              class="mx-auto"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2251.527911038135!2d37.48421511580477!3d55.64502648052466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54d659d7c1d4d%3A0xbc6d6f7462abe7ec!2z0JvQtdC90LjQvdGB0LrQuNC5INC_0YAt0YIuLCAxMjMg0LrQvtGA0L_Rg9GBIDQsINCc0L7RgdC60LLQsCwgMTE3NTEz!5e0!3m2!1sru!2sru!4v1651607012969!5m2!1sru!2sru"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-xl-4 col-sm-12">
+            <p class="fs-5">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, id. Adipisci
+              illo unde totam fugiat, quis quas labore pariatur quo, eum, cupiditate ducimus sed
+              molestiae culpa excepturi minus sit facilis. Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Repellendus, id. Adipisci illo unde totam fugiat, quis quas labore
+              pariatur quo, eum, cupiditate ducimus sed molestiae culpa excepturi minus sit facilis.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, id. Adipisci
+              illo unde totam fugiat, quis quas labore pariatur quo, eum, cupiditate ducimus sed
+              molestiae culpa excepturi minus sit facilis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg3" id="footer">
+      <div class="container">
+        <div class="row text-center">
+          <a href="#" class="btn btn-brand">Забронировать столик</a>
+        </div>
+      </div>
+    </footer>
+
     <script src="../static/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

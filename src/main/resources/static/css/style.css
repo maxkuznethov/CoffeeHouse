@@ -1,24 +1,33 @@
 :root {
-  --bg_collor1: #ffffff;
-  --bg_collor2: #fdf5e6;
-  --bg_collor3: #593e2c;
+  --collor1: #ffffff;
+  --collor2: #fdf5e6;
+  --collor3: #593e2c;
 }
 
 body {
   min-height: 75rem;
 }
 
+.color1 {
+  color: var(--collor1);
+}
+
 .bg1 {
-  background-color: var(--bg_collor1);
+  background-color: var(--collor1);
 }
 .bg2 {
-  background-color: var(--bg_collor2);
+  background-color: var(--collor2);
 }
 
 .bg3 {
-  background-color: var(--bg_collor3);
+  background-color: var(--collor3);
 }
-header,
+footer {
+  padding: 30px 0;
+}
+header {
+  padding: 50px 0px;
+}
 section {
   padding: 75px 0px;
 }
