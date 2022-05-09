@@ -1,7 +1,7 @@
 :root {
   --collor1: #ffffff;
   --collor2: #fdf5e6;
-  --collor3: #593e2c;
+  --collor3: #c9aa8e;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
 }
 
 .color1 {
-  color: var(--collor1);
+  color: black;
 }
 
 .bg1 {
@@ -30,4 +30,30 @@ header {
 }
 section {
   padding: 75px 0px;
+}
+
+.booking-btn {
+  width: 250px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+
+.booking-btn:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.enter {
+  padding-left: 0;
+}
+.enter:hover {
+  color: var(--collor2);
+}
+
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: var(--collor2);
 }
