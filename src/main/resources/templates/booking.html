@@ -1,10 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
     <title>Бронирование столика</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="css/login.css" />
 </head>
 <body>
 
+
+<div class="container">
+    <div class="wrapper">
+        <div th:if="${param.success}">
+            <div class="alert alert-info">Вы успешно забронировали столик!</div>
+        </div>
+        <header>Бронирование</header>
+
+        <form th:action="@{/booking}" method="post" th:object="${booking}"  >
+            <div class="field date">
+                <div class="input-area">
+                    <input
+                            type="text"
+                            placeholder="10.05.2022"
+                            th:field="*{date}"
+                            required
+                            autofocus="autofocus"
+                    />
+                    <i class="icon fas fa-calendar"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+            </div>
+
+            <div class="field time">
+                <div class="input-area">
+                    <input
+                            type="text"
+                            placeholder="17:00"
+                            th:field="*{time}"
+                            required
+                            autofocus="autofocus"
+                    />
+                    <i class="icon fas fa-clock"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+            </div>
+
+            <div class="field people">
+                <div class="input-area">
+                    <input
+                            type="text"
+                            placeholder="Количество людей"
+                            th:field="*{numberOfPeople}"
+                            required
+                            autofocus="autofocus"
+                    />
+                    <i class="icon fas fa-users"></i>
+                    <i class="error error-icon fas fa-exclamation-circle"></i>
+                </div>
+            </div>
+
+            <div>
+                <button
+                        type="submit"
+                        class="form-control btn btn-success"
+                >
+                    Забронировать
+                </button>
+            </div>
+            <div>
+            <span class="reg"
+            >
+              <a style="color: #c9aa8e" href="/" th:href="@{/}"
+              >Вернуться на главную</a
+              ></span
+            >
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

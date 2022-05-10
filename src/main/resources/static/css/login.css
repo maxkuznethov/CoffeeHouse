@@ -1,7 +1,7 @@
 :root {
   --collor1: #ffffff;
   --collor2: #fdf5e6;
-  --collor3: #593e2c;
+  --collor3: #c9aa8e;
 }
 * {
   margin: 0;
@@ -10,8 +10,7 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+
   background: rgb(201, 170, 142);
   background: linear-gradient(
     90deg,

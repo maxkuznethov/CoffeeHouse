@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Администратор</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body>
+<section class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="margin-top: 50px;">
+                <h2 class="text-center text-uppercase mb-4" style="color: black">Записи клиентов</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">Дата</th>
+                <th scope="col">Время</th>
+                <th scope="col">Люди</th>
+                <th scope="col">Фамилия</th>
+                <th scope="col">Имя</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Контактный телефон</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr data-th-each="booking : ${bookings}">
+                <td data-th-text="${booking.date}"></td>
+                <td data-th-text="${booking.time}"></td>
+                <td data-th-text="${booking.numberOfPeople}"></td>
+                <td data-th-text="${booking.user.lastName}"></td>
+                <td data-th-text="${booking.user.firstName}"></td>
+                <td data-th-text="${booking.user.email}"></td>
+                <td data-th-text="${booking.user.number}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

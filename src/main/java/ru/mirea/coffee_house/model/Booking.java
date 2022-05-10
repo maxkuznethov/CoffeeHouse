@@ -23,4 +23,11 @@ public class Booking {
     private User user;
 
     public Booking(){}
+
+    public Booking(String date, String time, String numberOfPeople, User user) {
+        this.date = date;
+        this.time = time;
+        this.numberOfPeople = numberOfPeople;
+        this.user = user;
+    }
 }
