@@ -21,7 +21,7 @@ body {
   );
 }
 
-.wr {
+.container {
   width: 100%;
   display: flex;
   align-items: center;
@@ -163,6 +163,11 @@ form input[type='submit']:hover {
 }
 
 .btn {
-  background-color: black;
+  background-color: #c9aa8e;
+  border-color: #c9aa8e;
   color: white;
+}
+.btn:hover{
+  background-color: #c9aa8e;
+  border-color: #c9aa8e;
 }

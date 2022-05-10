@@ -34,7 +34,7 @@ section {
 
 .booking-btn {
   width: 250px;
-  border-radius: 5px;
+  border-radius: 7px;
   transition: 0.2s;
 }
 
@@ -45,6 +45,9 @@ section {
 
 .enter {
   padding-left: 0;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
 }
 .enter:hover {
   color: var(--collor2);
