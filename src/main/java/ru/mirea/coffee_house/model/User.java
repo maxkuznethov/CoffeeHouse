@@ -13,7 +13,9 @@ import java.util.List;
 @Table(name = "users", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 @Data
 public class User {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String firstName;
 
@@ -37,11 +39,6 @@ public class User {
                     name = "role_id", referencedColumnName = "id"))
     private Collection<Role> roles;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-
     public User(String firstName, String lastName, String email, String number, String password, Collection<Role> roles) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -54,7 +51,4 @@ public class User {
     public User() {
 
     }
-
-
-
 }
